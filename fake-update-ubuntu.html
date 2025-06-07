@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ubuntu 24.04 Updating...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #300a24;
+      color: white;
+      font-family: Ubuntu, sans-serif;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .update-container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #f7f7f7;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .spinner {
+      border: 10px solid rgba(255,255,255,0.1);
+      border-top: 10px solid #ff7800;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1.5s linear infinite;
+      margin: 2rem auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 2rem;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="update-container">
+    <div class="spinner"></div>
+    <h1>Installing updates...</h1>
+    <p>Ubuntu 24.04 LTS is installing important updates.<br>Please do not turn off your computer.</p>
+  </div>
+  <div class="footer">© Canonical Ltd. | Ubuntu 24.04 LTS</div>
+</body>
+</html>
+
